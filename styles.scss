@@ -1,0 +1,47 @@
+$bg-dark: #343a40;
+$text-light: white;
+$transition: 0.3s;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header,
+footer {
+  background-color: $bg-dark;
+  color: $text-light;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+  background-size: cover;
+  color: $text-light;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.social-icons {
+  a {
+    color: $text-light;
+    margin: 0 10px;
+    transition: transform $transition;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  transition: transform $transition;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
